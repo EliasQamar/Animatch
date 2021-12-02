@@ -1,0 +1,606 @@
+/*Global styling*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Styling for body*/
+body {
+	background-image: url("images/cherryBlossom2.jpeg");
+	background-repeat: no-repeat; 
+	height: 100vh;
+	background-color: #FCC9B9;
+	display: flex;
+	background-size: cover;
+}
+
+/*Styling for the timer*/
+#seconds {
+	font-size: 20px;
+	font-family: serif;
+	color: white;
+}
+
+  #minutes {
+	font-size: 20px;
+	font-family: serif;
+	color: white;
+}
+
+  #colon {
+	font-size: 20px;
+	font-family: serif;
+	color: white;
+}
+
+/*Styling for the flip counter*/
+#flipCounter{
+	font-size: 20px;
+	font-family: serif;
+	color: white;
+}
+
+/*Logo Styling*/
+.logo{
+	width: 100%;
+	padding-top: 5px;
+	margin-bottom: 15px;
+}
+
+.logo img {
+	max-width: 30%;
+	max-height: auto;
+}
+
+
+
+/*Credits Page Styling*/
+.credit {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	border: 5px solid black;
+	background-color: rgb(116, 0, 44);
+	height: 85%;
+	border-radius: 40px;
+}
+
+.credit h1{
+	color:lightgray;
+	margin: 10px;
+	font-family: serif;
+	text-decoration: underline;
+}
+
+.credit ul{
+	padding:  50px;
+	list-style: none;
+	line-height: 50px;
+	margin-top: 3%;
+}
+
+.credit ul li {
+	font-family: serif;
+	font-size: 20px;
+	color: lightgray;
+	text-align: center;
+}
+
+/*Used to put things at the bottom of certain divs, aligned to the center of the divs/navs.*/
+#bottom {
+	position: relative;
+	bottom: 50px;
+	text-align: center;
+}
+
+/*Styling for the homepage/main menu*/
+.Homepage {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	border: 5px solid rgb(0, 0, 0);
+	background-color: rgb(116, 0, 44);
+	height: 85%;
+	border-radius: 40px;
+	
+}
+
+.mainMenu {
+	list-style: none;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+	font-family:serif;
+	text-align: center;
+	
+}
+
+.mainMenu li {
+	margin-bottom: 60px;
+	line-height: 20px;
+	margin-top: 10px;
+	text-align: center;
+	
+}
+
+.mainMenu li a{
+	text-decoration: none;
+	color:rgb(0, 0, 0);
+	border-radius: 10px;
+	background-color: #F08F90; 
+	padding: 20px;
+	text-align: center;
+	
+}
+
+/*Styling for the game screen, namely the top menu of the game container.*/
+.gameMenu {
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+	font-family: serif;
+}
+
+.gameMenu ul{
+	list-style: none;
+
+}
+
+.gameMenu li {
+	padding: 10px;
+	display: inline-block;
+	margin: auto;
+}
+
+.gameMenu li a {
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	background-color: #F08F90; 
+	border: 1px solid black;
+
+}
+
+.menuItems {
+	color: rgb(170, 170, 170);
+
+}
+
+.otherMenu{
+	list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+	font-family:serif;
+	text-align: center;
+}
+
+.otherMenu li a{
+	text-decoration: none;
+	color: rgb(0,0,0);
+	padding: 15px;
+	display: inline-block;
+	background-color: #F08F90; 
+	border-radius: 10px;
+}
+
+.otherMenu li {
+	list-style: none;
+}
+
+/*Styling for the level select menu*/
+.levelSelect{
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	border: 5px solid black;
+	border-radius: 40px;
+	height: 85%;
+	background-color: rgb(116, 0, 44);
+}
+
+.levelTypes{
+	text-align: center;
+}
+
+.levelList{
+	list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+	font-family:serif;
+	display: inline-block;
+	margin: none;
+	padding: none;
+}
+
+.levelList li{
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 43%;
+}
+
+.levelList li a{
+	text-decoration: none;
+	color:lightgray;
+	padding: none;
+	font-size: 30px;
+	margin-bottom: 100%;
+}
+
+.levelList li a img{
+	background-color: #F08F90; 
+	width: 150px;
+	height: 150px;
+	border-radius : 10px;
+}
+
+.levelSelect h1 {
+	color:lightgray;
+	margin: 10px;
+	font-family: serif;
+	text-decoration: underline;
+}
+
+.levelList li a:hover{
+	color:white;
+}
+
+/*The following give styling to their respective buttons/menus 
+in order to allow for a hovering animation.*/
+.levelList li a img:hover{
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+}
+
+.otherMenu li a:hover{
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+}
+
+.Homepage li a:hover{
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+}
+
+.gameMenu li a:hover{
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+}
+
+/*EASY DIFFICULTY*/
+/*Styling for the MENU of the game on the easiest difficulty. 
+This was used to keep the buttons on top of the game container 
+and was also useful in allowing us to use different coloring 
+and use different styling between the game container and options container*/
+.optionsContainerEasy{
+	width: 592px;
+	height: 387px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+	background-color: black;
+	border-radius: 40px;
+}
+
+/*Styling for the easy game container which contains all of the cards for this difficulty. 
+The height of the game container is slightly less than that of the options container. 
+The game container sits on top of the options container with a little extra 
+room at the top for the menu buttons. */
+.gameContainerEasy
+{
+	width: 592px;
+	height: 300px;
+	margin: auto;
+	display: flex;
+	flex-wrap:wrap;
+	perspective: 1000px;
+	background-color: rgb(116, 0, 44);
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 10px;
+	border: 5px solid black;
+}
+
+/*Styling for the actual cards (images) within the easy difficulty of the game.*/
+.gameContainerEasy .memoryCard img
+	{
+		background-color: #ffffff;
+		width: 100%;
+		height: auto;
+		padding: 3px;
+		border-radius : 10px;
+		position: absolute;
+		backface-visibility: hidden;
+	}
+
+
+/*----------------------MEDIUM DIFFICULTY----------------------------*/
+/*Same as styling for the easy options container 
+but this one is bigger as there are more cards on screen*/
+.optionsContainerMedium{
+	width: 592px;
+	height: 680px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+	background-color: black;
+	border-radius: 40px;
+}
+
+/*Styling for the Medium game container which contains all of the cards for this difficulty. 
+The height of the game container is slightly less than that of the options container. 
+The game container sits on top of the options container with a little extra 
+room at the top for the menu buttons. */
+.gameContainerMedium
+{
+	width: 592px;
+	height: 592px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+	background-color: rgb(116, 0, 44);
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 10px;
+	border: 5px solid black;
+}
+
+/*Styling for the actual cards (images) within the medium difficulty of the game.*/
+.gameContainerMedium .memoryCard img
+	{
+		background-color: #ffffff;
+		width: 100%;
+		height: 100%;
+		padding: 3px;
+		border-radius : 10px;
+		position: absolute;
+		backface-visibility: hidden;
+	}
+
+/*-----------------HARD DIFFICULTY------------------------*/
+/*Same as styling for the medium options container 
+but this one is wider as there are more cards on screen*/
+.optionsContainerHard{
+	width: 1000px;
+	height: 680px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 1000px;
+	background-color: black;
+	border-radius: 40px;
+}
+
+/*Styling for the hard game container which contains all of the cards for this difficulty. 
+The height of the game container is slightly less than that of the options container. 
+The game container sits on top of the options container with a little extra 
+room at the top for the menu buttons. */
+.gameContainerHard
+{
+	width: 1000px;
+	height: 592px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	perspective: 10000px;
+	background-color: rgb(116, 0, 44);
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding: 10px;
+	border: 5px solid black;
+}
+
+/*Styling for the actual cards (images) within the hard difficulty of the game.*/
+.gameContainerHard .memoryCard img
+	{
+		background-color: #ffffff;
+		width: 100%;
+		height: auto;
+		padding: 3px;
+		border-radius : 10px;
+		position: absolute;
+		backface-visibility: hidden;
+	}
+
+/*Styling for the card containers (not images themselves) for the hard difficulty. 
+This styling is different from the easy and medium ones due to 
+difference in card sizing and spacing.*/
+.gameContainerHard .memoryCard {
+	width: 14%;
+	height: auto;
+	margin-left: 18.5px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+/*Used to style the card holders (not images themselves) 
+in both the easy and medium game modes*/
+.memoryCard
+{
+	width: 23%;
+	height: auto;
+	margin: 5px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+/*Hover styling for the cards in game*/
+.memoryCard:hover {
+	border-style:dotted;
+	border-radius: 10px;
+	border-color: #DB5A6B;
+	border-width: 5px;
+}
+
+/*Styling to give a visual transition for each card.*/
+.memoryCard:active {
+	transform: scale(0.95);
+	transition: transform 0.2s ease-in-out;
+}
+
+/*Styling used to visually rotate the cards when flipped.*/
+.memoryCard.flip {
+		transform: rotateY(180deg);
+		cursor: pointer;
+	}
+
+.front
+	{
+		transform: rotateY(180deg);
+	}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other (used for the character library page).*/
+  .column {
+	flex: 50%;
+	padding: 0 4px;
+  }
+  
+  /*Styles the images within the columns*/
+  .column img {
+	margin-top: 8px;
+	border-radius: 10px;
+	vertical-align: middle;
+	width: 125px;
+	height: 125px;
+  }
+
+  .column p {
+	list-style: none;
+    text-decoration: none;
+	color: white;
+    font-size: 18px;
+    font-family:serif;
+    text-align: center;
+  }
+
+  /*Applies a hover animation to the images on the character library page.*/
+  .column a img:hover {
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+}
+
+/*Styles the entire character library page*/
+  .Character {
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	border: 5px solid rgb(0, 0, 0);
+	background-color: rgb(116, 0, 44);
+	height: auto;
+	border-radius: 40px;
+	
+}
+
+.Character h1 {
+	color:lightgray;
+	margin: 10px;
+	font-size: 30px;
+	font-family: serif;
+	text-decoration: underline;	
+}
+
+.Character h2 {
+	color:lightgray;
+	margin: 10px;
+	font-family: serif;	
+}
+
+.characterBottom {
+	position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+
+/*The Overlay (background) of the end game screen.*/
+.overlay {   
+	height: 100%;
+	width: 0;
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0, 0.9); 
+	overflow-x: hidden; 
+	transition: 0.5s; 
+}
+
+/*Styling the header within the end game screen*/
+.overlay h1{
+	color: white;
+	font-family:serif;
+}
+
+  .overlay p {
+	color: white;
+	font-family:serif;
+	font-size: 20px;
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+	position: relative;
+	top: 5%; 
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30px; 
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+	padding: 8px;
+	margin: 15px;
+	width: auto;
+	text-decoration: none;
+	font-size: 36px;
+	color: black;
+	display: block; 
+	transition: 0.3s; 
+	background-color: #F08F90;
+	border-radius : 10px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+	color: white;
+	background: #DB5A6B;
+	color: white;
+	border-style:outset;
+	border-radius: 10px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+  }
